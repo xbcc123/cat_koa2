@@ -1,3 +1,11 @@
+/*
+ * @Author: yankangjie
+ * @Date: 2022-08-07 23:58:46
+ * @LastEditors: yankangjie
+ * @LastEditTime: 2022-08-08 00:07:09
+ * @FilePath: /index.js
+ * @Description: 猫
+ */
 const Koa = require("koa");
 const Router = require("koa-router");
 const logger = require("koa-logger");
@@ -51,6 +59,7 @@ router.get("/api/wx_openid", async (ctx) => {
 });
 
 const app = new Koa();
+console.log(22);
 app
   .use(logger())
   .use(bodyParser())
